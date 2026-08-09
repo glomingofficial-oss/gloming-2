@@ -1,763 +1,1092 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
+```css
+/* =========================================================
+   GLOMING WEBSITE
+   PREMIUM BLUE + WHITE
+   FINAL CSS
+========================================================= */
 
-<head>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <meta charset="UTF-8">
+html {
+    scroll-behavior: smooth;
+}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #101828;
+    line-height: 1.6;
+}
 
-    <title>GLOMING | Software & Digital Solutions</title>
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-    <meta name="description"
-          content="GLOMING — You Bring the Idea. We Build the Software.">
+img {
+    display: block;
+    max-width: 100%;
+}
 
-    <link rel="stylesheet" href="style.css">
 
-</head>
+/* =========================================================
+   HEADER
+========================================================= */
 
-<body>
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-<!-- ================= HEADER ================= -->
+    width: 100%;
 
-<header class="header">
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    <a href="#home" class="logo">
-        GLOMING
-    </a>
+    padding: 18px 6%;
 
-    <nav class="nav-links">
+    background: rgba(255, 255, 255, 0.96);
 
-        <a href="#home">Home</a>
+    border-bottom: 1px solid #e5e7eb;
 
-        <a href="#services">Services</a>
+    backdrop-filter: blur(12px);
+}
 
-        <a href="#about">About</a>
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #1264ff;
 
-        <a href="#process">Process</a>
+    white-space: nowrap;
+}
 
-        <a href="#contact">Contact</a>
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
 
-    </nav>
+.nav-links a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #344054;
 
-    <a href="#services" class="nav-button">
-        Start Project
-    </a>
+    transition: 0.3s ease;
+}
 
-</header>
+.nav-links a:hover {
+    color: #1264ff;
+}
 
+.nav-button {
+    display: inline-flex;
 
-<!-- ================= HERO ================= -->
+    align-items: center;
+    justify-content: center;
 
-<section id="home" class="hero">
+    width: auto;
+    height: auto;
 
-    <div class="hero-content">
+    padding: 11px 20px;
 
-        <div class="hero-badge">
-            SOFTWARE & DIGITAL SOLUTIONS
-        </div>
+    background: #1264ff;
+    color: #ffffff;
 
-        <h1>
-            You Bring the Idea.
-            <span>We Build the Software.</span>
-        </h1>
+    border-radius: 9px;
 
-        <p>
-            Turn your ideas into professional apps, websites
-            and custom software solutions with GLOMING.
-        </p>
+    font-size: 14px;
+    font-weight: 700;
 
-        <div class="hero-buttons">
+    white-space: nowrap;
 
-            <a href="#services" class="btn btn-primary">
-                START YOUR PROJECT
-            </a>
+    transition: 0.3s ease;
+}
 
-            <a href="#contact" class="btn btn-outline">
-                CONTACT OUR TEAM
-            </a>
+.nav-button:hover {
+    background: #084dcc;
+    transform: translateY(-2px);
+}
 
-        </div>
 
-    </div>
+/* =========================================================
+   HERO
+========================================================= */
 
-</section>
+.hero {
+    min-height: 720px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-<!-- ================= SERVICES ================= -->
+    text-align: center;
 
-<section id="services" class="section">
+    padding: 100px 6%;
 
-    <div class="section-heading">
-
-        <span>WHAT WE BUILD</span>
-
-        <h2>Choose Your Project</h2>
-
-        <p>
-            Select the service you need and tell our team
-            about your project requirements.
-        </p>
-
-    </div>
-
-
-    <div class="service-grid">
-
-
-        <!-- APP DEVELOPMENT -->
-
-        <article class="service-card">
-
-            <div class="service-image">
-
-                <img
-                    src="app-development.png"
-                    alt="App Development"
-                >
-
-            </div>
-
-            <div class="service-icon">
-                📱
-            </div>
-
-            <h3>
-                App Development
-            </h3>
-
-            <p>
-                Build powerful and professional mobile
-                applications for your business or idea.
-            </p>
-
-            <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe6E-F8WD4qo6jbXWaG0Kzcu2emusAHNSEcnp9xll7ch6D1jg/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="service-button"
-            >
-                START YOUR PROJECT →
-            </a>
-
-        </article>
-
-
-        <!-- WEBSITE DEVELOPMENT -->
-
-        <article class="service-card">
-
-            <div class="service-image">
-
-                <img
-                    src="website-development.png"
-                    alt="Website Development"
-                >
-
-            </div>
-
-            <div class="service-icon">
-                🌐
-            </div>
-
-            <h3>
-                Website Development
-            </h3>
-
-            <p>
-                Create a modern, responsive and professional
-                website for your business or brand.
-            </p>
-
-            <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc4xJUYb_TyGVLKIgFxxtJuYFb3Xs6YS7rt8WAdvtJG7e3RQA/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="service-button"
-            >
-                START YOUR PROJECT →
-            </a>
-
-        </article>
-
-
-        <!-- SOFTWARE DEVELOPMENT -->
-
-        <article class="service-card">
-
-            <div class="service-image">
-
-                <img
-                    src="software-development.png"
-                    alt="Software Development"
-                >
-
-            </div>
-
-            <div class="service-icon">
-                💻
-            </div>
-
-            <h3>
-                Software Development
-            </h3>
-
-            <p>
-                Get custom software designed around your
-                business requirements and workflow.
-            </p>
-
-            <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfvKNNsyXBiUIMg9HU2gVYXoPSlkqOPd10bLKBuuhA1ZF5nMw/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="service-button"
-            >
-                START YOUR PROJECT →
-            </a>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- ================= NOTICE ================= -->
-
-<section class="section notice-section">
-
-    <div class="section-heading">
-
-        <span>IMPORTANT</span>
-
-        <h2>NOTICE</h2>
-
-        <p>
-            Stay connected with GLOMING.
-        </p>
-
-    </div>
-
-
-    <div class="notice-slider">
-
-        <div class="notice-track">
-
-            <img
-                src="notice-1.png"
-                alt="GLOMING Notice 1"
-            >
-
-            <img
-                src="notice-2.png"
-                alt="GLOMING Notice 2"
-            >
-
-            <img
-                src="notice-3.png"
-                alt="GLOMING Notice 3"
-            >
-
-            <img
-                src="notice-4.png"
-                alt="GLOMING Notice 4"
-            >
-
-
-            <!-- DUPLICATE FOR CONTINUOUS SLIDER -->
-
-            <img
-                src="notice-1.png"
-                alt="GLOMING Notice 1"
-            >
-
-            <img
-                src="notice-2.png"
-                alt="GLOMING Notice 2"
-            >
-
-            <img
-                src="notice-3.png"
-                alt="GLOMING Notice 3"
-            >
-
-            <img
-                src="notice-4.png"
-                alt="GLOMING Notice 4"
-            >
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="section">
-
-    <div class="about-content">
-
-        <div class="section-heading left">
-
-            <span>
-                ABOUT GLOMING
-            </span>
-
-            <h2>
-                Turning Ideas Into
-                Digital Solutions.
-            </h2>
-
-        </div>
-
-        <p>
-            GLOMING is a software and digital solutions company
-            focused on converting ideas into professional apps,
-            websites and custom software.
-        </p>
-
-        <p>
-            From requirement discussion and design to development,
-            testing, deployment and support, our team works to
-            build solutions around your needs.
-        </p>
-
-        <strong>
-            “You Bring the Idea. We Build the Software.”
-        </strong>
-
-    </div>
-
-</section>
-
-
-<!-- ================= WHY GLOMING ================= -->
-
-<section class="section">
-
-    <div class="section-heading">
-
-        <span>WHY GLOMING</span>
-
-        <h2>
-            Built Around Your Needs
-        </h2>
-
-    </div>
-
-
-    <div class="why-grid">
-
-
-        <div class="why-card">
-
-            <div>💡</div>
-
-            <h3>
-                Idea Focused
-            </h3>
-
-            <p>
-                We understand your idea before starting
-                development.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div>⚙️</div>
-
-            <h3>
-                Custom Solutions
-            </h3>
-
-            <p>
-                Solutions are designed according to your
-                business requirements.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div>🤝</div>
-
-            <h3>
-                Team Support
-            </h3>
-
-            <p>
-                Our team remains available for project
-                discussion and support.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div>🛠️</div>
-
-            <h3>
-                Long-Term Support
-            </h3>
-
-            <p>
-                Development, testing, updates and technical
-                support are part of our service approach.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROCESS ================= -->
-
-<section id="process" class="section">
-
-    <div class="section-heading">
-
-        <span>HOW IT WORKS</span>
-
-        <h2>
-            From Idea To Solution
-        </h2>
-
-    </div>
-
-
-    <div class="process-grid">
-
-
-        <div class="process-card">
-
-            <span>01</span>
-
-            <h3>Requirement</h3>
-
-            <p>
-                Tell us about your idea and requirements.
-            </p>
-
-        </div>
-
-
-        <div class="process-card">
-
-            <span>02</span>
-
-            <h3>Discussion</h3>
-
-            <p>
-                Our team reviews your project requirements.
-            </p>
-
-        </div>
-
-
-        <div class="process-card">
-
-            <span>03</span>
-
-            <h3>Quotation</h3>
-
-            <p>
-                Project scope and quotation are discussed.
-            </p>
-
-        </div>
-
-
-        <div class="process-card">
-
-            <span>04</span>
-
-            <h3>Development</h3>
-
-            <p>
-                Our team starts design and development.
-            </p>
-
-        </div>
-
-
-        <div class="process-card">
-
-            <span>05</span>
-
-            <h3>Testing</h3>
-
-            <p>
-                The project is tested before delivery.
-            </p>
-
-        </div>
-
-
-        <div class="process-card">
-
-            <span>06</span>
-
-            <h3>Delivery</h3>
-
-            <p>
-                Your completed solution is delivered.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PAYMENT ================= -->
-
-<section class="section">
-
-    <div class="section-heading">
-
-        <span>PAYMENT</span>
-
-        <h2>
-            Transparent Project Process
-        </h2>
-
-        <p>
-            Final pricing depends on your project requirements,
-            features, complexity and development scope.
-        </p>
-
-    </div>
-
-
-    <div class="payment-grid">
-
-
-        <div class="payment-card">
-
-            <h3>
-                Development Demo
-            </h3>
-
-            <strong>
-                ₹499
-            </strong>
-
-            <p>
-                Development demo/version fee.
-                This amount is separate from the final
-                project cost.
-            </p>
-
-        </div>
-
-
-        <div class="payment-card">
-
-            <h3>
-                Development Payment
-            </h3>
-
-            <strong>
-                30% + 70%
-            </strong>
-
-            <p>
-                30% advance before development and remaining
-                70% according to agreed project terms.
-            </p>
-
-        </div>
-
-
-        <div class="payment-card">
-
-            <h3>
-                Play Store Publishing
-            </h3>
-
-            <strong>
-                ₹3,000
-            </strong>
-
-            <p>
-                Google Play Store publishing charge is
-                separate from development cost.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="warranty-box">
-
-        <h3>
-            6-Month Development Bug Warranty
-        </h3>
-
-        <p>
-            GLOMING provides a 6-month development bug warranty
-            for the delivered project. New features, redesigns
-            and additional changes may be charged separately.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="section">
-
-    <div class="contact-box">
-
-        <div class="section-heading">
-
-            <span>
-                GET IN TOUCH
-            </span>
-
-            <h2>
-                Let's Build Something Great.
-            </h2>
-
-            <p>
-                Have an idea? Tell the GLOMING team about it.
-            </p>
-
-        </div>
-
-
-        <div class="contact-buttons">
-
-            <a
-                href="mailto:glomingofficial@gmail.com"
-                class="btn btn-primary"
-            >
-                📧 EMAIL US
-            </a>
-
-
-            <a
-                href="https://www.instagram.com/gloming.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-outline"
-            >
-                📱 INSTAGRAM
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="footer-logo">
-        GLOMING
-    </div>
-
-    <p>
-        You Bring the Idea. We Build the Software.
-    </p>
-
-    <div class="footer-links">
-
-        <a href="#home">Home</a>
-
-        <a href="#services">Services</a>
-
-        <a href="#about">About</a>
-
-        <a href="#contact">Contact</a>
-
-    </div>
-
-    <p class="copyright">
-        © 2026 GLOMING. All Rights Reserved.
-    </p>
-
-</footer>
-
-
-<!-- ================= CHATBASE AI CHATBOT ================= -->
-
-<script>
-(function(){
-    if(
-        !window.chatbase ||
-        window.chatbase("getState") !== "initialized"
-    ){
-
-        window.chatbase = (...arguments) => {
-
-            if(!window.chatbase.q){
-                window.chatbase.q = [];
-            }
-
-            window.chatbase.q.push(arguments);
-        };
-
-        window.chatbase = new Proxy(
-            window.chatbase,
-            {
-                get(target, prop){
-
-                    if(prop === "q"){
-                        return target.q;
-                    }
-
-                    return (...args) =>
-                        target(prop, ...args);
-                }
-            }
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(18, 100, 255, 0.12),
+            transparent 40%
+        ),
+        linear-gradient(
+            180deg,
+            #f8fbff 0%,
+            #ffffff 100%
         );
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    margin-bottom: 25px;
+
+    border-radius: 50px;
+
+    background: #eaf2ff;
+    color: #1264ff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 78px);
+
+    line-height: 1.05;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #1264ff;
+}
+
+.hero p {
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+    color: #667085;
+
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 24px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #1264ff;
+    color: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(18, 100, 255, 0.20);
+}
+
+.btn-primary:hover {
+    background: #084dcc;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 35px rgba(18, 100, 255, 0.28);
+}
+
+.btn-outline {
+    background: #ffffff;
+
+    color: #1264ff;
+
+    border: 1px solid #b8cdfc;
+}
+
+.btn-outline:hover {
+    background: #f0f5ff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+.section {
+    padding: 100px 6%;
+}
+
+.section-heading {
+    max-width: 750px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.section-heading.left {
+    margin-left: 0;
+    margin-right: 0;
+
+    text-align: left;
+}
+
+.section-heading span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #1264ff;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: clamp(32px, 4vw, 50px);
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+
+    font-weight: 900;
+
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    color: #667085;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services {
+    background: #ffffff;
+}
+
+.service-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.service-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(16, 24, 40, 0.06);
+
+    transition: 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #b8cdfc;
+
+    box-shadow:
+        0 20px 45px rgba(18, 100, 255, 0.12);
+}
+
+
+/* =========================================================
+   SERVICE IMAGES
+========================================================= */
+
+.service-image {
+    width: 100%;
+
+    height: 210px;
+
+    overflow: hidden;
+
+    background: #eef4ff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    /*
+       COVER = fills the complete image area.
+       Prevents left/right blank space.
+    */
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 22px 24px 12px;
+
+    border-radius: 14px;
+
+    background: #eaf2ff;
+
+    font-size: 25px;
+}
+
+.service-card h3 {
+    padding: 0 24px;
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    padding: 0 24px;
+
+    color: #667085;
+
+    font-size: 15px;
+
+    margin-bottom: 22px;
+}
+
+.service-button {
+    display: block;
+
+    margin: 0 24px 25px;
+
+    padding: 13px 16px;
+
+    text-align: center;
+
+    border-radius: 9px;
+
+    background: #1264ff;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.service-button:hover {
+    background: #084dcc;
+}
+
+
+/* =========================================================
+   NOTICE
+========================================================= */
+
+.notice-section {
+    background: #f7f9fc;
+
+    overflow: hidden;
+}
+
+.notice-slider {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.notice-track {
+    width: max-content;
+
+    display: flex;
+
+    gap: 20px;
+
+    animation:
+        noticeScroll 28s linear infinite;
+}
+
+.notice-track:hover {
+    animation-play-state: paused;
+}
+
+.notice-track img {
+    flex-shrink: 0;
+
+    width: 330px;
+    height: 210px;
+
+    display: block;
+
+    /*
+       Fills the notice card completely.
+    */
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 15px;
+
+    border: 1px solid #e4e7ec;
+
+    box-shadow:
+        0 8px 25px rgba(16, 24, 40, 0.08);
+}
+
+@keyframes noticeScroll {
+
+    0% {
+        transform: translateX(0);
     }
 
-    const onLoad = function(){
-
-        const script = document.createElement("script");
-
-        script.src =
-            "https://www.chatbase.co/embed.min.js";
-
-        script.id =
-            "g6slCvy-ffQx4RWCzINAU";
-
-        script.domain =
-            "www.chatbase.co";
-
-        document.body.appendChild(script);
-    };
-
-    if(document.readyState === "complete"){
-        onLoad();
-    }else{
-        window.addEventListener("load", onLoad);
+    100% {
+        transform: translateX(-50%);
     }
 
-})();
-</script>
+}
 
-</body>
 
-</html>
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background: #ffffff;
+}
+
+.about-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about-content .section-heading {
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #667085;
+
+    font-size: 17px;
+
+    margin-bottom: 18px;
+}
+
+.about-content strong {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #1264ff;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   WHY GLOMING
+========================================================= */
+
+.why {
+    background: #f7f9fc;
+}
+
+.why-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.why-card {
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #b8cdfc;
+}
+
+.why-card > div {
+    font-size: 32px;
+
+    margin-bottom: 12px;
+}
+
+.why-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 19px;
+}
+
+.why-card p {
+    color: #667085;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process {
+    background: #ffffff;
+}
+
+.process-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.process-card {
+    position: relative;
+
+    padding: 30px;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    transition: 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(16, 24, 40, 0.07);
+}
+
+.process-card > span {
+    display: inline-flex;
+
+    width: 45px;
+    height: 45px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background: #1264ff;
+
+    color: #ffffff;
+
+    font-weight: 900;
+}
+
+.process-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+}
+
+.process-card p {
+    color: #667085;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PAYMENT
+========================================================= */
+
+.payment {
+    background: #f7f9fc;
+}
+
+.payment-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.payment-card {
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+.payment-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+}
+
+.payment-card strong {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #1264ff;
+
+    font-size: 30px;
+}
+
+.payment-card p {
+    color: #667085;
+
+    font-size: 14px;
+}
+
+.warranty-box {
+    max-width: 900px;
+
+    margin: 35px auto 0;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background: #eaf2ff;
+
+    border: 1px solid #c9dcff;
+}
+
+.warranty-box h3 {
+    margin-bottom: 8px;
+
+    color: #1264ff;
+}
+
+.warranty-box p {
+    color: #475467;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    background:
+        linear-gradient(
+            135deg,
+            #0b55d8,
+            #1264ff
+        );
+
+    color: #ffffff;
+}
+
+.contact-box {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.contact .section-heading span {
+    color: #dbe8ff;
+}
+
+.contact .section-heading h2 {
+    color: #ffffff;
+}
+
+.contact .section-heading p {
+    color: #dbe8ff;
+}
+
+.contact-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.contact .btn-primary {
+    background: #ffffff;
+
+    color: #1264ff;
+}
+
+.contact .btn-primary:hover {
+    background: #eef4ff;
+}
+
+.contact .btn-outline {
+    background: transparent;
+
+    color: #ffffff;
+
+    border-color: rgba(255,255,255,0.6);
+}
+
+.contact .btn-outline:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 50px 6% 30px;
+
+    background: #07152f;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+footer > p {
+    color: #b7c4da;
+
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #dbe8ff;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .service-grid,
+    .payment-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-button {
+        padding: 9px 13px;
+
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 650px;
+
+        padding: 80px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 75px 5%;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .service-grid,
+    .payment-grid,
+    .why-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* MOBILE SERVICE IMAGE */
+
+    .service-image {
+        width: 100%;
+
+        height: 210px;
+
+        overflow: hidden;
+    }
+
+    .service-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center;
+    }
+
+
+    /* MOBILE NOTICE */
+
+    .notice-track {
+        gap: 15px;
+
+        animation-duration: 24s;
+    }
+
+    .notice-track img {
+        width: 280px;
+        height: 180px;
+
+        object-fit: cover;
+
+        object-position: center;
+
+        border-radius: 14px;
+    }
+
+
+    /* MOBILE BUTTONS */
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-buttons .btn {
+        width: 100%;
+    }
+
+
+    /* MOBILE FOOTER */
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .nav-button {
+        padding: 8px 10px;
+
+        font-size: 11px;
+    }
+
+    .notice-track img {
+        width: 250px;
+        height: 160px;
+    }
+
+}
 ```
