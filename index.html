@@ -1,1092 +1,771 @@
-```css
-/* =========================================================
-   GLOMING WEBSITE
-   PREMIUM BLUE + WHITE
-   FINAL CSS
-========================================================= */
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<head>
 
-html {
-    scroll-behavior: smooth;
-}
+    <meta charset="UTF-8">
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
-    color: #101828;
-    line-height: 1.6;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+    <title>GLOMING | Software & Digital Solutions</title>
 
-img {
-    display: block;
-    max-width: 100%;
-}
+    <meta name="description"
+        content="GLOMING — You Bring the Idea. We Build the Software.">
 
+    <link rel="stylesheet" href="style.css">
 
-/* =========================================================
-   HEADER
-========================================================= */
+</head>
 
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+<body>
 
-    width: 100%;
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+<header class="header">
 
-    padding: 18px 6%;
+    <a href="#home" class="logo">
+        GLOMING
+    </a>
 
-    background: rgba(255, 255, 255, 0.96);
+    <nav class="nav-links">
 
-    border-bottom: 1px solid #e5e7eb;
+        <a href="#home">Home</a>
 
-    backdrop-filter: blur(12px);
-}
+        <a href="#services">Services</a>
 
-.logo {
-    font-size: 28px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    color: #1264ff;
+        <a href="#about">About</a>
 
-    white-space: nowrap;
-}
+        <a href="#process">Process</a>
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
+        <a href="#contact">Contact</a>
 
-.nav-links a {
-    font-size: 15px;
-    font-weight: 600;
-    color: #344054;
+    </nav>
 
-    transition: 0.3s ease;
-}
+    <a href="#services" class="nav-button">
+        START PROJECT
+    </a>
 
-.nav-links a:hover {
-    color: #1264ff;
-}
+</header>
 
-.nav-button {
-    display: inline-flex;
 
-    align-items: center;
-    justify-content: center;
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-    width: auto;
-    height: auto;
+<section id="home" class="hero">
 
-    padding: 11px 20px;
+    <div class="hero-content">
 
-    background: #1264ff;
-    color: #ffffff;
+        <div class="hero-badge">
+            SOFTWARE & DIGITAL SOLUTIONS
+        </div>
 
-    border-radius: 9px;
+        <h1>
+            You Bring the Idea.
+            <span>We Build the Software.</span>
+        </h1>
 
-    font-size: 14px;
-    font-weight: 700;
+        <p>
+            Turn your ideas into professional apps, websites
+            and custom software solutions with GLOMING.
+        </p>
 
-    white-space: nowrap;
+        <div class="hero-buttons">
 
-    transition: 0.3s ease;
-}
+            <a href="#services" class="btn btn-primary">
+                START YOUR PROJECT
+            </a>
 
-.nav-button:hover {
-    background: #084dcc;
-    transform: translateY(-2px);
-}
+            <a href="#contact" class="btn btn-outline">
+                CONTACT OUR TEAM
+            </a>
 
+        </div>
 
-/* =========================================================
-   HERO
-========================================================= */
+    </div>
 
-.hero {
-    min-height: 720px;
+</section>
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    text-align: center;
+<!-- =====================================================
+     SERVICES
+===================================================== -->
 
-    padding: 100px 6%;
+<section id="services" class="section">
 
-    background:
-        radial-gradient(
-            circle at 50% 20%,
-            rgba(18, 100, 255, 0.12),
-            transparent 40%
-        ),
-        linear-gradient(
-            180deg,
-            #f8fbff 0%,
-            #ffffff 100%
-        );
-}
+    <div class="section-heading">
 
-.hero-content {
-    max-width: 900px;
-}
+        <span>WHAT WE BUILD</span>
 
-.hero-badge {
-    display: inline-block;
+        <h2>Choose Your Project</h2>
 
-    padding: 8px 15px;
+        <p>
+            Select the service you need and tell our team
+            about your project requirements.
+        </p>
 
-    margin-bottom: 25px;
+    </div>
 
-    border-radius: 50px;
 
-    background: #eaf2ff;
-    color: #1264ff;
+    <div class="service-grid">
 
-    font-size: 12px;
-    font-weight: 800;
 
-    letter-spacing: 1.5px;
-}
+        <!-- APP DEVELOPMENT -->
 
-.hero h1 {
-    font-size: clamp(42px, 6vw, 78px);
+        <article class="service-card">
 
-    line-height: 1.05;
+            <div class="service-image">
 
-    font-weight: 900;
+                <img
+                    src="app-development.png"
+                    alt="App Development"
+                >
 
-    letter-spacing: -2px;
+            </div>
 
-    margin-bottom: 25px;
-}
+            <div class="service-icon">
+                📱
+            </div>
 
-.hero h1 span {
-    display: block;
-    color: #1264ff;
-}
+            <h3>
+                App Development
+            </h3>
 
-.hero p {
-    max-width: 700px;
+            <p>
+                Build powerful and professional mobile
+                applications for your business or idea.
+            </p>
 
-    margin: 0 auto 35px;
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe6E-F8WD4qo6jbXWaG0Kzcu2emusAHNSEcnp9xll7ch6D1jg/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-button"
+            >
+                START YOUR PROJECT →
+            </a>
 
-    color: #667085;
+        </article>
 
-    font-size: 18px;
-}
 
-.hero-buttons {
-    display: flex;
+        <!-- WEBSITE DEVELOPMENT -->
 
-    justify-content: center;
-    align-items: center;
+        <article class="service-card">
 
-    gap: 14px;
+            <div class="service-image">
 
-    flex-wrap: wrap;
-}
+                <img
+                    src="website-development.png"
+                    alt="Website Development"
+                >
 
+            </div>
 
-/* =========================================================
-   BUTTONS
-========================================================= */
+            <div class="service-icon">
+                🌐
+            </div>
 
-.btn {
-    display: inline-flex;
+            <h3>
+                Website Development
+            </h3>
 
-    align-items: center;
-    justify-content: center;
+            <p>
+                Create a modern, responsive and professional
+                website for your business or brand.
+            </p>
 
-    min-height: 50px;
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc4xJUYb_TyGVLKIgFxxtJuYFb3Xs6YS7rt8WAdvtJG7e3RQA/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-button"
+            >
+                START YOUR PROJECT →
+            </a>
 
-    padding: 0 24px;
+        </article>
 
-    border-radius: 10px;
 
-    font-size: 14px;
-    font-weight: 800;
+        <!-- SOFTWARE DEVELOPMENT -->
 
-    transition: 0.3s ease;
-}
+        <article class="service-card">
 
-.btn-primary {
-    background: #1264ff;
-    color: #ffffff;
+            <div class="service-image">
 
-    box-shadow:
-        0 12px 30px rgba(18, 100, 255, 0.20);
-}
+                <img
+                    src="software-development.png"
+                    alt="Software Development"
+                >
 
-.btn-primary:hover {
-    background: #084dcc;
+            </div>
 
-    transform: translateY(-3px);
+            <div class="service-icon">
+                💻
+            </div>
 
-    box-shadow:
-        0 16px 35px rgba(18, 100, 255, 0.28);
-}
+            <h3>
+                Software Development
+            </h3>
 
-.btn-outline {
-    background: #ffffff;
+            <p>
+                Get custom software designed around your
+                business requirements and workflow.
+            </p>
 
-    color: #1264ff;
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfvKNNsyXBiUIMg9HU2gVYXoPSlkqOPd10bLKBuuhA1ZF5nMw/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-button"
+            >
+                START YOUR PROJECT →
+            </a>
 
-    border: 1px solid #b8cdfc;
-}
+        </article>
 
-.btn-outline:hover {
-    background: #f0f5ff;
+    </div>
 
-    transform: translateY(-3px);
-}
+</section>
 
 
-/* =========================================================
-   GENERAL SECTION
-========================================================= */
+<!-- =====================================================
+     NOTICE
+===================================================== -->
 
-.section {
-    padding: 100px 6%;
-}
+<section class="section notice-section">
 
-.section-heading {
-    max-width: 750px;
+    <div class="section-heading">
 
-    margin: 0 auto 55px;
+        <span>IMPORTANT</span>
 
-    text-align: center;
-}
+        <h2>NOTICE</h2>
 
-.section-heading.left {
-    margin-left: 0;
-    margin-right: 0;
+        <p>
+            Stay connected with GLOMING.
+        </p>
 
-    text-align: left;
-}
+    </div>
 
-.section-heading span {
-    display: block;
 
-    margin-bottom: 10px;
+    <div class="notice-slider">
 
-    color: #1264ff;
+        <div class="notice-track">
 
-    font-size: 12px;
+            <img src="notice-1.png" alt="GLOMING Notice 1">
 
-    font-weight: 900;
+            <img src="notice-2.png" alt="GLOMING Notice 2">
 
-    letter-spacing: 2px;
-}
+            <img src="notice-3.png" alt="GLOMING Notice 3">
 
-.section-heading h2 {
-    font-size: clamp(32px, 4vw, 50px);
+            <img src="notice-4.png" alt="GLOMING Notice 4">
 
-    line-height: 1.15;
 
-    margin-bottom: 15px;
+            <!-- DUPLICATE FOR CONTINUOUS SLIDER -->
 
-    font-weight: 900;
+            <img src="notice-1.png" alt="GLOMING Notice 1">
 
-    letter-spacing: -1px;
-}
+            <img src="notice-2.png" alt="GLOMING Notice 2">
 
-.section-heading p {
-    color: #667085;
+            <img src="notice-3.png" alt="GLOMING Notice 3">
 
-    font-size: 16px;
-}
+            <img src="notice-4.png" alt="GLOMING Notice 4">
 
+        </div>
 
-/* =========================================================
-   SERVICES
-========================================================= */
+    </div>
 
-.services {
-    background: #ffffff;
-}
+</section>
 
-.service-grid {
-    max-width: 1200px;
 
-    margin: auto;
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
-    display: grid;
+<section id="about" class="section about">
 
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+    <div class="about-content">
 
-    gap: 25px;
-}
+        <div class="section-heading">
 
-.service-card {
-    overflow: hidden;
+            <span>ABOUT GLOMING</span>
 
-    background: #ffffff;
+            <h2>
+                Turning Ideas Into
+                Digital Solutions.
+            </h2>
 
-    border: 1px solid #e4e7ec;
+        </div>
 
-    border-radius: 20px;
+        <p>
+            GLOMING is a software and digital solutions company
+            focused on converting ideas into professional apps,
+            websites and custom software.
+        </p>
 
-    box-shadow:
-        0 10px 35px rgba(16, 24, 40, 0.06);
+        <p>
+            From requirement discussion and design to development,
+            testing, deployment and support, our team works to
+            build solutions around your needs.
+        </p>
 
-    transition: 0.35s ease;
-}
+        <strong>
+            “You Bring the Idea. We Build the Software.”
+        </strong>
 
-.service-card:hover {
-    transform: translateY(-8px);
+    </div>
 
-    border-color: #b8cdfc;
+</section>
 
-    box-shadow:
-        0 20px 45px rgba(18, 100, 255, 0.12);
-}
 
+<!-- =====================================================
+     WHY GLOMING
+===================================================== -->
 
-/* =========================================================
-   SERVICE IMAGES
-========================================================= */
+<section class="section why">
 
-.service-image {
-    width: 100%;
+    <div class="section-heading">
 
-    height: 210px;
+        <span>WHY GLOMING</span>
 
-    overflow: hidden;
+        <h2>
+            Built Around Your Needs
+        </h2>
 
-    background: #eef4ff;
+    </div>
 
-    display: flex;
 
-    align-items: center;
-    justify-content: center;
-}
+    <div class="why-grid">
 
-.service-image img {
-    width: 100%;
-    height: 100%;
+        <div class="why-card">
 
-    display: block;
+            <div>💡</div>
 
-    /*
-       COVER = fills the complete image area.
-       Prevents left/right blank space.
-    */
+            <h3>
+                Idea Focused
+            </h3>
 
-    object-fit: cover;
+            <p>
+                We understand your idea before starting
+                development.
+            </p>
 
-    object-position: center;
+        </div>
 
-    transition: 0.5s ease;
-}
 
-.service-card:hover .service-image img {
-    transform: scale(1.03);
-}
+        <div class="why-card">
 
+            <div>⚙️</div>
 
-/* =========================================================
-   SERVICE CONTENT
-========================================================= */
+            <h3>
+                Custom Solutions
+            </h3>
 
-.service-icon {
-    width: 55px;
-    height: 55px;
+            <p>
+                Solutions are designed according to your
+                business requirements.
+            </p>
 
-    display: flex;
+        </div>
 
-    align-items: center;
-    justify-content: center;
 
-    margin: 22px 24px 12px;
+        <div class="why-card">
 
-    border-radius: 14px;
+            <div>🤝</div>
 
-    background: #eaf2ff;
+            <h3>
+                Team Support
+            </h3>
 
-    font-size: 25px;
-}
+            <p>
+                Our team remains available for project
+                discussion and support.
+            </p>
 
-.service-card h3 {
-    padding: 0 24px;
+        </div>
 
-    font-size: 24px;
 
-    margin-bottom: 10px;
-}
+        <div class="why-card">
 
-.service-card p {
-    padding: 0 24px;
+            <div>🛠️</div>
 
-    color: #667085;
+            <h3>
+                Long-Term Support
+            </h3>
 
-    font-size: 15px;
+            <p>
+                Development, testing, updates and technical
+                support are part of our service approach.
+            </p>
 
-    margin-bottom: 22px;
-}
+        </div>
 
-.service-button {
-    display: block;
+    </div>
 
-    margin: 0 24px 25px;
+</section>
 
-    padding: 13px 16px;
 
-    text-align: center;
+<!-- =====================================================
+     PROCESS
+===================================================== -->
 
-    border-radius: 9px;
+<section id="process" class="section">
 
-    background: #1264ff;
+    <div class="section-heading">
 
-    color: #ffffff;
+        <span>HOW IT WORKS</span>
 
-    font-size: 13px;
+        <h2>
+            From Idea To Solution
+        </h2>
 
-    font-weight: 800;
+    </div>
 
-    transition: 0.3s ease;
-}
 
-.service-button:hover {
-    background: #084dcc;
-}
+    <div class="process-grid">
 
 
-/* =========================================================
-   NOTICE
-========================================================= */
+        <div class="process-card">
 
-.notice-section {
-    background: #f7f9fc;
+            <span>01</span>
 
-    overflow: hidden;
-}
+            <h3>Requirement</h3>
 
-.notice-slider {
-    width: 100%;
+            <p>
+                Tell us about your idea and requirements.
+            </p>
 
-    overflow: hidden;
+        </div>
 
-    border-radius: 18px;
-}
 
-.notice-track {
-    width: max-content;
+        <div class="process-card">
 
-    display: flex;
+            <span>02</span>
 
-    gap: 20px;
+            <h3>Discussion</h3>
 
-    animation:
-        noticeScroll 28s linear infinite;
-}
+            <p>
+                Our team reviews your project requirements.
+            </p>
 
-.notice-track:hover {
-    animation-play-state: paused;
-}
+        </div>
 
-.notice-track img {
-    flex-shrink: 0;
 
-    width: 330px;
-    height: 210px;
+        <div class="process-card">
 
-    display: block;
+            <span>03</span>
 
-    /*
-       Fills the notice card completely.
-    */
+            <h3>Quotation</h3>
 
-    object-fit: cover;
+            <p>
+                Project scope and quotation are discussed.
+            </p>
 
-    object-position: center;
+        </div>
 
-    border-radius: 15px;
 
-    border: 1px solid #e4e7ec;
+        <div class="process-card">
 
-    box-shadow:
-        0 8px 25px rgba(16, 24, 40, 0.08);
-}
+            <span>04</span>
 
-@keyframes noticeScroll {
+            <h3>Development</h3>
 
-    0% {
-        transform: translateX(0);
-    }
+            <p>
+                Our team starts design and development.
+            </p>
 
-    100% {
-        transform: translateX(-50%);
-    }
+        </div>
 
-}
 
+        <div class="process-card">
 
-/* =========================================================
-   ABOUT
-========================================================= */
+            <span>05</span>
 
-.about {
-    background: #ffffff;
-}
+            <h3>Testing</h3>
 
-.about-content {
-    max-width: 850px;
+            <p>
+                The project is tested before delivery.
+            </p>
 
-    margin: auto;
+        </div>
 
-    text-align: center;
-}
 
-.about-content .section-heading {
-    margin-bottom: 25px;
-}
+        <div class="process-card">
 
-.about-content p {
-    color: #667085;
+            <span>06</span>
 
-    font-size: 17px;
+            <h3>Delivery</h3>
 
-    margin-bottom: 18px;
-}
+            <p>
+                Your completed solution is delivered.
+            </p>
 
-.about-content strong {
-    display: block;
+        </div>
 
-    margin-top: 25px;
+    </div>
 
-    color: #1264ff;
+</section>
 
-    font-size: 18px;
-}
 
+<!-- =====================================================
+     PAYMENT
+===================================================== -->
 
-/* =========================================================
-   WHY GLOMING
-========================================================= */
+<section class="section payment">
 
-.why {
-    background: #f7f9fc;
-}
+    <div class="section-heading">
 
-.why-grid {
-    max-width: 1100px;
+        <span>PAYMENT</span>
 
-    margin: auto;
+        <h2>
+            Transparent Project Process
+        </h2>
 
-    display: grid;
+        <p>
+            Final pricing depends on your project requirements,
+            features, complexity and development scope.
+        </p>
 
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
+    </div>
 
-    gap: 20px;
-}
 
-.why-card {
-    padding: 28px;
+    <div class="payment-grid">
 
-    background: #ffffff;
 
-    border: 1px solid #e4e7ec;
+        <div class="payment-card">
 
-    border-radius: 16px;
+            <h3>
+                Development Demo
+            </h3>
 
-    text-align: center;
+            <strong>
+                ₹499
+            </strong>
 
-    transition: 0.3s ease;
-}
+            <p>
+                Development demo/version fee.
+                This amount is separate from the final
+                project cost.
+            </p>
 
-.why-card:hover {
-    transform: translateY(-5px);
+        </div>
 
-    border-color: #b8cdfc;
-}
 
-.why-card > div {
-    font-size: 32px;
+        <div class="payment-card">
 
-    margin-bottom: 12px;
-}
+            <h3>
+                Development Payment
+            </h3>
 
-.why-card h3 {
-    margin-bottom: 8px;
+            <strong>
+                30% + 70%
+            </strong>
 
-    font-size: 19px;
-}
+            <p>
+                30% advance before development and remaining
+                70% according to agreed project terms.
+            </p>
 
-.why-card p {
-    color: #667085;
+        </div>
 
-    font-size: 14px;
-}
 
+        <div class="payment-card">
 
-/* =========================================================
-   PROCESS
-========================================================= */
+            <h3>
+                Play Store Publishing
+            </h3>
 
-.process {
-    background: #ffffff;
-}
+            <strong>
+                ₹3,000
+            </strong>
 
-.process-grid {
-    max-width: 1100px;
+            <p>
+                Google Play Store publishing charge is
+                separate from development cost.
+            </p>
 
-    margin: auto;
+        </div>
 
-    display: grid;
+    </div>
 
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
 
-    gap: 20px;
-}
+    <div class="warranty-box">
 
-.process-card {
-    position: relative;
+        <h3>
+            6-Month Development Bug Warranty
+        </h3>
 
-    padding: 30px;
+        <p>
+            GLOMING provides a 6-month development bug warranty
+            for the delivered project. New features, redesigns
+            and additional changes may be charged separately.
+        </p>
 
-    border: 1px solid #e4e7ec;
+    </div>
 
-    border-radius: 16px;
+</section>
 
-    background: #ffffff;
 
-    transition: 0.3s ease;
-}
+<!-- =====================================================
+     CONTACT
+===================================================== -->
 
-.process-card:hover {
-    transform: translateY(-5px);
+<section id="contact" class="section contact">
 
-    box-shadow:
-        0 15px 35px rgba(16, 24, 40, 0.07);
-}
+    <div class="contact-box">
 
-.process-card > span {
-    display: inline-flex;
+        <div class="section-heading">
 
-    width: 45px;
-    height: 45px;
+            <span>GET IN TOUCH</span>
 
-    align-items: center;
-    justify-content: center;
+            <h2>
+                Let's Build Something Great.
+            </h2>
 
-    margin-bottom: 20px;
+            <p>
+                Have an idea? Tell the GLOMING team about it.
+            </p>
 
-    border-radius: 50%;
+        </div>
 
-    background: #1264ff;
 
-    color: #ffffff;
+        <div class="contact-buttons">
 
-    font-weight: 900;
-}
+            <a
+                href="mailto:glomingofficial@gmail.com"
+                class="btn btn-primary"
+            >
+                📧 EMAIL US
+            </a>
 
-.process-card h3 {
-    margin-bottom: 8px;
 
-    font-size: 20px;
-}
+            <a
+                href="https://www.instagram.com/gloming.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+            >
+                📱 INSTAGRAM
+            </a>
 
-.process-card p {
-    color: #667085;
+        </div>
 
-    font-size: 14px;
-}
+    </div>
 
+</section>
 
-/* =========================================================
-   PAYMENT
-========================================================= */
 
-.payment {
-    background: #f7f9fc;
-}
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-.payment-grid {
-    max-width: 1100px;
+<footer>
 
-    margin: auto;
+    <div class="footer-logo">
+        GLOMING
+    </div>
 
-    display: grid;
+    <p>
+        You Bring the Idea. We Build the Software.
+    </p>
 
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
 
-    gap: 20px;
-}
+    <div class="footer-links">
 
-.payment-card {
-    padding: 30px;
+        <a href="#home">Home</a>
 
-    background: #ffffff;
+        <a href="#services">Services</a>
 
-    border: 1px solid #e4e7ec;
+        <a href="#about">About</a>
 
-    border-radius: 18px;
+        <a href="#contact">Contact</a>
 
-    text-align: center;
-}
+    </div>
 
-.payment-card h3 {
-    margin-bottom: 12px;
 
-    font-size: 20px;
-}
+    <p class="copyright">
+        © 2026 GLOMING. All Rights Reserved.
+    </p>
 
-.payment-card strong {
-    display: block;
+</footer>
 
-    margin-bottom: 12px;
 
-    color: #1264ff;
+<!-- =====================================================
+     CHATBASE AI CHATBOT
+===================================================== -->
 
-    font-size: 30px;
-}
+<script>
+(function () {
 
-.payment-card p {
-    color: #667085;
+    if (
+        !window.chatbase ||
+        window.chatbase("getState") !== "initialized"
+    ) {
 
-    font-size: 14px;
-}
+        window.chatbase = (...arguments) => {
 
-.warranty-box {
-    max-width: 900px;
+            if (!window.chatbase.q) {
+                window.chatbase.q = [];
+            }
 
-    margin: 35px auto 0;
+            window.chatbase.q.push(arguments);
 
-    padding: 30px;
+        };
 
-    text-align: center;
+        window.chatbase = new Proxy(
+            window.chatbase,
+            {
+                get(target, prop) {
 
-    border-radius: 18px;
+                    if (prop === "q") {
+                        return target.q;
+                    }
 
-    background: #eaf2ff;
+                    return (...args) =>
+                        target(prop, ...args);
 
-    border: 1px solid #c9dcff;
-}
-
-.warranty-box h3 {
-    margin-bottom: 8px;
-
-    color: #1264ff;
-}
-
-.warranty-box p {
-    color: #475467;
-
-    font-size: 14px;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact {
-    background:
-        linear-gradient(
-            135deg,
-            #0b55d8,
-            #1264ff
+                }
+            }
         );
 
-    color: #ffffff;
-}
-
-.contact-box {
-    max-width: 850px;
-
-    margin: auto;
-
-    text-align: center;
-}
-
-.contact .section-heading span {
-    color: #dbe8ff;
-}
-
-.contact .section-heading h2 {
-    color: #ffffff;
-}
-
-.contact .section-heading p {
-    color: #dbe8ff;
-}
-
-.contact-buttons {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 14px;
-
-    flex-wrap: wrap;
-}
-
-.contact .btn-primary {
-    background: #ffffff;
-
-    color: #1264ff;
-}
-
-.contact .btn-primary:hover {
-    background: #eef4ff;
-}
-
-.contact .btn-outline {
-    background: transparent;
-
-    color: #ffffff;
-
-    border-color: rgba(255,255,255,0.6);
-}
-
-.contact .btn-outline:hover {
-    background: rgba(255,255,255,0.1);
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    padding: 50px 6% 30px;
-
-    background: #07152f;
-
-    color: #ffffff;
-
-    text-align: center;
-}
-
-.footer-logo {
-    margin-bottom: 10px;
-
-    font-size: 28px;
-
-    font-weight: 900;
-
-    letter-spacing: 2px;
-}
-
-footer > p {
-    color: #b7c4da;
-
-    font-size: 14px;
-}
-
-.footer-links {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 25px;
-
-    margin: 25px 0;
-}
-
-.footer-links a {
-    color: #dbe8ff;
-
-    font-size: 14px;
-
-    transition: 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #ffffff;
-}
-
-.copyright {
-    padding-top: 20px;
-
-    border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .nav-links {
-        display: none;
-    }
-
-    .service-grid,
-    .payment-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .why-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .process-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .header {
-        padding: 15px 5%;
-    }
-
-    .logo {
-        font-size: 23px;
-    }
-
-    .nav-button {
-        padding: 9px 13px;
-
-        font-size: 12px;
-    }
-
-    .hero {
-        min-height: 650px;
-
-        padding: 80px 5%;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-
-        letter-spacing: -1.5px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .section {
-        padding: 75px 5%;
-    }
-
-    .section-heading {
-        margin-bottom: 40px;
-    }
-
-    .section-heading h2 {
-        font-size: 34px;
-    }
-
-    .service-grid,
-    .payment-grid,
-    .why-grid,
-    .process-grid {
-        grid-template-columns: 1fr;
     }
 
 
-    /* MOBILE SERVICE IMAGE */
+    const onLoad = function () {
 
-    .service-image {
-        width: 100%;
+        const script = document.createElement("script");
 
-        height: 210px;
+        script.src =
+            "https://www.chatbase.co/embed.min.js";
 
-        overflow: hidden;
+        script.id =
+            "g6slCvy-ffQx4RWCzINAU";
+
+        script.domain =
+            "www.chatbase.co";
+
+        document.body.appendChild(script);
+
+    };
+
+
+    if (document.readyState === "complete") {
+
+        onLoad();
+
+    } else {
+
+        window.addEventListener(
+            "load",
+            onLoad
+        );
+
     }
 
-    .service-image img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-
-        object-position: center;
-    }
+})();
+</script>
 
 
-    /* MOBILE NOTICE */
+</body>
 
-    .notice-track {
-        gap: 15px;
-
-        animation-duration: 24s;
-    }
-
-    .notice-track img {
-        width: 280px;
-        height: 180px;
-
-        object-fit: cover;
-
-        object-position: center;
-
-        border-radius: 14px;
-    }
-
-
-    /* MOBILE BUTTONS */
-
-    .contact-buttons {
-        flex-direction: column;
-    }
-
-    .contact-buttons .btn {
-        width: 100%;
-    }
-
-
-    /* MOBILE FOOTER */
-
-    .footer-links {
-        flex-wrap: wrap;
-
-        gap: 15px;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 380px) {
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .nav-button {
-        padding: 8px 10px;
-
-        font-size: 11px;
-    }
-
-    .notice-track img {
-        width: 250px;
-        height: 160px;
-    }
-
-}
-```
+</html>
