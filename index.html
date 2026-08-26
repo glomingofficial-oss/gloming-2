@@ -3,8 +3,23 @@
 
 <head>
 
-    <meta name="google-site-verification" content="KShwbeHiSG70Lm7MIi_9IJasPa_A_GCEPUpwyEA3St0">
+    <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GLOMING | Software & Digital Solutions</title>
+
+    <meta name="description"
+          content="GLOMING — You Bring the Idea. We Build the Software.">
+
+    <link rel="canonical"
+          href="https://glomingofficial-oss.github.io/gloming-2/">
+
+    <!-- Google Search Verification -->
+    <meta name="google-site-verification"
+          content="KShwbeHiSG70Lm7MIi_9IJasPa_A_GCEPUpwyEA3St0">
+
+    <!-- Organization Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -15,25 +30,20 @@
       "founder": {
         "@type": "Person",
         "name": "Ganapati Sahu",
-        "alternateName": "Shakti"
+        "alternateName": "Shakti",
+        "jobTitle": "Founder",
+        "url": "https://glomingofficial-oss.github.io/gloming-2/founder.html"
       }
     }
     </script>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>GLOMING | Software & Digital Solutions</title>
-
-    <meta name="description"
-          content="GLOMING — You Bring the Idea. We Build the Software.">
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
+
 
 <!-- =========================================================
      HEADER
@@ -199,7 +209,7 @@
             </p>
 
             <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc4xJUYb_TyGVLKIgFxxtJuYFb3Xs6YS7rt8WAdvtJG7e3RQA/viewform?usp=header"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc4xJUYb_TyGVLKIgFxxtJuYbF3Xs6YS7rt8WAdvtJG7e3RQA/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="service-button"
@@ -327,40 +337,83 @@
 
 
 <!-- =========================================================
-     ABOUT
+     ABOUT GLOMING
 ========================================================= -->
 
-<section id="about" class="section">
+<section id="about" class="section about-section">
 
     <div class="about-content">
-<div class="section-heading about-heading">
 
-    <span>ABOUT GLOMING</span>
 
-    <h2>Turning Ideas Into Digital Solutions.</h2>
+        <div class="section-heading about-heading">
 
-</div>
+            <span>
+                ABOUT GLOMING
+            </span>
+
+            <h2>
+                Turning Ideas Into Digital Solutions.
+            </h2>
+
         </div>
 
-        <p>
-            GLOMING is a software and digital solutions company
-            focused on converting ideas into professional apps,
-            websites and custom software.
-        </p>
 
-        <p>
-            From requirement discussion and design to development,
-            testing, deployment and support, our team works to
-            build solutions around your needs.
-        </p>
+        <div class="about-text">
 
-        <strong>
+            <p>
+                GLOMING is a software and digital solutions
+                company dedicated to transforming ideas into
+                professional digital products.
+            </p>
+
+            <p>
+                We build <strong>mobile applications, websites
+                and custom software</strong> designed around
+                real business needs.
+            </p>
+
+            <p>
+                From the initial idea and requirement discussion
+                to <strong>design, development, testing and
+                deployment</strong>, we focus on delivering
+                practical and reliable digital solutions.
+            </p>
+
+        </div>
+
+
+        <div class="about-quote">
+
             “You Bring the Idea. We Build the Software.”
-        </strong>
-        <p>
-    <strong>Founder:</strong>
-    <a href="founder.html">
-        Ganapati Sahu (Shakti)
+
+        </div>
+
+
+        <!-- FOUNDER -->
+
+        <div class="founder-preview">
+
+            <span class="founder-label">
+                FOUNDER
+            </span>
+
+            <h3>
+                Ganapati Sahu (Shakti)
+            </h3>
+
+            <p>
+                Founder of GLOMING
+            </p>
+
+            <a
+                href="founder.html"
+                class="founder-link"
+            >
+                VIEW FOUNDER PROFILE →
+            </a>
+
+        </div>
+
 
     </div>
 
@@ -763,41 +816,88 @@
 </footer>
 
 
+<!-- =========================================================
+     CHATBASE
+========================================================= -->
+
 <script>
+
 (function(){
-if(!window.chatbase || window.chatbase("getState") !== "initialized"){
-window.chatbase = (...arguments) => {
-if(!window.chatbase.q){
-window.chatbase.q = [];
-}
-window.chatbase.q.push(arguments);
-};
 
-window.chatbase = new Proxy(window.chatbase,{
-get(target,prop){
-if(prop === "q"){
-return target.q;
-}
-return (...args) => target(prop,...args);
-}
-});
-}
+    if(
+        !window.chatbase ||
+        window.chatbase("getState") !== "initialized"
+    ){
 
-const onLoad = function(){
-const script = document.createElement("script");
-script.src = "https://www.chatbase.co/embed.min.js";
-script.id = "g6slCvy-ffQx4RWCzINAU";
-script.domain = "www.chatbase.co";
-document.body.appendChild(script);
-};
+        window.chatbase = (...arguments) => {
 
-if(document.readyState === "complete"){
-onLoad();
-}else{
-window.addEventListener("load",onLoad);
-}
+            if(!window.chatbase.q){
+                window.chatbase.q = [];
+            }
+
+            window.chatbase.q.push(arguments);
+
+        };
+
+
+        window.chatbase = new Proxy(
+            window.chatbase,
+            {
+
+                get(target, prop){
+
+                    if(prop === "q"){
+                        return target.q;
+                    }
+
+                    return (...args) =>
+                        target(prop, ...args);
+
+                }
+
+            }
+        );
+
+    }
+
+
+    const onLoad = function(){
+
+        const script =
+            document.createElement("script");
+
+        script.src =
+            "https://www.chatbase.co/embed.min.js";
+
+        script.id =
+            "g6slCvy-ffQx4RWCzINAU";
+
+        script.domain =
+            "www.chatbase.co";
+
+        document.body.appendChild(script);
+
+    };
+
+
+    if(document.readyState === "complete"){
+
+        onLoad();
+
+    }else{
+
+        window.addEventListener(
+            "load",
+            onLoad
+        );
+
+    }
+
 })();
+
 </script>
 
+
 </body>
+
 </html>
