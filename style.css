@@ -484,7 +484,13 @@ img {
     text-align: center;
 }
 
-.about-content .section-heading {
+.about-content .section-heading {.about-heading {
+    text-align: center;
+}
+
+.about-heading h2 {
+    white-space: nowrap;
+}
     margin-bottom: 25px;
 }
 
