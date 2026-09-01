@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,29 +8,157 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary SEO -->
     <title>Ganapati Sahu (Shakti) | Founder of GLOMING</title>
 
-    <meta name="description"
-          content="Ganapati Sahu (Shakti) is the Founder of GLOMING, a software and digital solutions company focused on apps, websites and custom software.">
+    <meta
+        name="description"
+        content="Ganapati Sahu (Shakti) is the Founder of GLOMING, a software and digital solutions company focused on apps, websites and custom software."
+    >
 
-    <link rel="canonical"
-          href="https://glomingofficial-oss.github.io/gloming-2/founder.html">
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large"
+    >
+
+    <meta
+        name="author"
+        content="Ganapati Sahu (Shakti)"
+    >
+
+    <link
+        rel="canonical"
+        href="https://glomingofficial-oss.github.io/gloming-2/founder.html"
+    >
+
+
+    <!-- Open Graph -->
+    <meta
+        property="og:type"
+        content="profile"
+    >
+
+    <meta
+        property="og:title"
+        content="Ganapati Sahu (Shakti) | Founder of GLOMING"
+    >
+
+    <meta
+        property="og:description"
+        content="Official Founder page of Ganapati Sahu (Shakti), Founder of GLOMING."
+    >
+
+    <meta
+        property="og:url"
+        content="https://glomingofficial-oss.github.io/gloming-2/founder.html"
+    >
+
+    <meta
+        property="og:site_name"
+        content="GLOMING"
+    >
+
+
+    <!--
+        ============================================================
+        STRUCTURED DATA
+        ============================================================
+
+        This connects:
+
+        Ganapati Sahu
+              ↓
+        Founder of
+              ↓
+           GLOMING
+
+        And also:
+
+        Ganapati Sahu
+              ↓
+           worksFor
+              ↓
+           GLOMING
+    -->
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ganapati Sahu",
-      "alternateName": "Shakti",
-      "jobTitle": "Founder",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "GLOMING",
-        "url": "https://glomingofficial-oss.github.io/gloming-2/"
-      },
-      "url": "https://glomingofficial-oss.github.io/gloming-2/founder.html"
+      "@graph": [
+
+        {
+          "@type": "Organization",
+          "@id": "https://glomingofficial-oss.github.io/gloming-2/#organization",
+          "name": "GLOMING",
+          "url": "https://glomingofficial-oss.github.io/gloming-2/",
+          "description": "GLOMING is a software and digital solutions company focused on apps, websites and custom software solutions.",
+          "founder": {
+            "@id": "https://glomingofficial-oss.github.io/gloming-2/founder.html#person"
+          }
+        },
+
+        {
+          "@type": "Person",
+          "@id": "https://glomingofficial-oss.github.io/gloming-2/founder.html#person",
+          "name": "Ganapati Sahu",
+          "alternateName": "Shakti",
+          "jobTitle": "Founder",
+          "url": "https://glomingofficial-oss.github.io/gloming-2/founder.html",
+          "worksFor": {
+            "@id": "https://glomingofficial-oss.github.io/gloming-2/#organization"
+          }
+        },
+
+        {
+          "@type": "WebPage",
+          "@id": "https://glomingofficial-oss.github.io/gloming-2/founder.html#webpage",
+          "url": "https://glomingofficial-oss.github.io/gloming-2/founder.html",
+          "name": "Ganapati Sahu (Shakti) | Founder of GLOMING",
+          "description": "Official Founder page of Ganapati Sahu (Shakti), Founder of GLOMING.",
+          "isPartOf": {
+            "@id": "https://glomingofficial-oss.github.io/gloming-2/#website"
+          },
+          "about": {
+            "@id": "https://glomingofficial-oss.github.io/gloming-2/founder.html#person"
+          },
+          "breadcrumb": {
+            "@id": "https://glomingofficial-oss.github.io/gloming-2/founder.html#breadcrumb"
+          }
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://glomingofficial-oss.github.io/gloming-2/#website",
+          "name": "GLOMING",
+          "url": "https://glomingofficial-oss.github.io/gloming-2/",
+          "publisher": {
+            "@id": "https://glomingofficial-oss.github.io/gloming-2/#organization"
+          }
+        },
+
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://glomingofficial-oss.github.io/gloming-2/founder.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "GLOMING",
+              "item": "https://glomingofficial-oss.github.io/gloming-2/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Founder",
+              "item": "https://glomingofficial-oss.github.io/gloming-2/founder.html"
+            }
+          ]
+        }
+
+      ]
     }
     </script>
+
 
     <style>
 
@@ -37,100 +166,205 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: #f7f7f7;
             color: #111;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 70px 20px;
         }
 
         .card {
-            background: white;
-            padding: 45px 30px;
-            border-radius: 16px;
+            background: #ffffff;
+            padding: 50px 35px;
+            border-radius: 18px;
             text-align: center;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
         }
 
         .label {
             font-size: 13px;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             font-weight: bold;
             color: #666;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
         }
 
         h1 {
-            margin: 0 0 10px;
-            font-size: 38px;
+            margin: 0 0 12px;
+            font-size: 40px;
+            line-height: 1.2;
         }
 
         .role {
-            font-size: 18px;
+            font-size: 19px;
             font-weight: bold;
-            margin-bottom: 25px;
+            margin-bottom: 28px;
         }
 
         p {
+            max-width: 680px;
+            margin: 18px auto;
             font-size: 16px;
-            line-height: 1.7;
+            line-height: 1.8;
             color: #555;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #111;
         }
 
         .back {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 22px;
+            margin-top: 28px;
+            padding: 13px 24px;
             background: #111;
-            color: white;
+            color: #fff;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 9px;
+            font-weight: bold;
+            transition: 0.2s ease;
         }
 
         .back:hover {
             opacity: 0.85;
+            transform: translateY(-1px);
+        }
+
+        .breadcrumb {
+            margin-bottom: 25px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .breadcrumb a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: #111;
+            margin: 25px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0 20px 40px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 40px 15px;
+            }
+
+            .card {
+                padding: 38px 22px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .role {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+
         }
 
     </style>
 
 </head>
 
+
 <body>
 
     <main class="container">
 
+        <!-- Breadcrumb -->
+        <nav
+            class="breadcrumb"
+            aria-label="Breadcrumb"
+        >
+            <a href="https://glomingofficial-oss.github.io/gloming-2/">
+                GLOMING
+            </a>
+
+            <span aria-hidden="true"> → </span>
+
+            <span>Founder</span>
+        </nav>
+
+
+        <!-- Founder Profile -->
         <section class="card">
 
             <div class="label">
                 GLOMING
             </div>
 
+
             <h1>
                 Ganapati Sahu (Shakti)
             </h1>
+
 
             <div class="role">
                 Founder of GLOMING
             </div>
 
+
+            <div class="divider"></div>
+
+
             <p>
-                Ganapati Sahu (Shakti) is the Founder of GLOMING,
+                <span class="highlight">Ganapati Sahu (Shakti)</span>
+                is the Founder of
+                <span class="highlight">GLOMING</span>,
                 a software and digital solutions company focused
                 on building professional apps, websites and
                 custom software solutions.
             </p>
+
 
             <p>
                 GLOMING focuses on converting ideas into practical
                 digital solutions through requirement discussion,
                 design, development, testing, deployment and support.
             </p>
+
+
+            <p>
+                As the Founder of GLOMING, Ganapati Sahu (Shakti)
+                is associated with the company's vision,
+                digital products and software development initiatives.
+            </p>
+
 
             <a
                 class="back"
@@ -143,6 +377,12 @@
 
     </main>
 
+
+    <footer>
+        © GLOMING — Software & Digital Solutions
+    </footer>
+
 </body>
 
 </html>
+```
