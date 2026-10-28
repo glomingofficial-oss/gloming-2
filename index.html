@@ -2,13 +2,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GLOMING | Software & Digital Solutions</title>
-    <meta name="description" content="GLOMING — You Bring the Idea. We Build the Software.">
+<title>GLOMING | Software & Digital Solutions</title>
+<meta name="description" content="GLOMING — You Bring the Idea. We Build the Software.">
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* NOTICE SECTION - MANUAL SCROLL ONLY */
+#notice.notice-section {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#notice .section-heading {
+    text-align: center;
+    padding: 0 20px;
+}
+
+#notice .notice-slider {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 15px 20px 24px !important;
+    margin: 20px 0 0 !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+    scrollbar-width: thin;
+    scrollbar-color: #1769ff #e8edf5;
+    -webkit-overflow-scrolling: touch;
+}
+
+#notice .notice-track {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 18px !important;
+    width: max-content !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+#notice .notice-track img {
+    display: block !important;
+    flex: 0 0 360px !important;
+    width: 360px !important;
+    max-width: none !important;
+    height: 205px !important;
+    min-height: 0 !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 1px solid #dce4ef;
+    border-radius: 12px;
+    background: #071426;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@media (max-width: 600px) {
+    #notice .notice-slider {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+
+    #notice .notice-track {
+        gap: 12px !important;
+    }
+
+    #notice .notice-track img {
+        flex-basis: 82vw !important;
+        width: 82vw !important;
+        height: 180px !important;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -26,14 +106,10 @@
     </nav>
 </header>
 
-
 <!-- HERO -->
 <section id="home" class="hero">
     <div class="hero-content">
-
-        <div class="hero-badge">
-            SOFTWARE & DIGITAL SOLUTIONS
-        </div>
+        <div class="hero-badge">SOFTWARE & DIGITAL SOLUTIONS</div>
 
         <h1>
             You Bring the Idea.
@@ -54,18 +130,14 @@
                 CONTACT OUR TEAM
             </a>
         </div>
-
     </div>
 </section>
 
-
 <!-- SERVICES -->
 <section id="services" class="section">
-
     <div class="section-heading">
         <span>WHAT WE BUILD</span>
         <h2>Choose Your Project</h2>
-
         <p>
             Select the service you need and tell our team
             about your project requirements.
@@ -74,150 +146,100 @@
 
     <div class="service-grid">
 
-        <!-- APP DEVELOPMENT -->
         <article class="service-card">
-
             <div class="service-image">
-                <img
-                    src="app-development.png"
-                    alt="App Development"
-                    loading="lazy"
-                >
+                <img src="app-development.png"
+                     alt="App Development" loading="lazy">
             </div>
-
             <div class="service-icon">📱</div>
-
             <h3>App Development</h3>
-
             <p>
                 Build powerful and professional mobile
                 applications for your business or idea.
             </p>
-
-            <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe6E-F8WD4qo6jbXWaG0Kzcu2emusAHNSEcnp9xll7ch6D1jg/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="service-button"
-            >
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6E-F8WD4qo6jbXWaG0Kzcu2emusAHNSEcnp9xll7ch6D1jg/viewform?usp=header"
+               target="_blank" rel="noopener noreferrer"
+               class="service-button">
                 START YOUR PROJECT →
             </a>
-
         </article>
 
-
-        <!-- WEBSITE DEVELOPMENT -->
         <article class="service-card">
-
             <div class="service-image">
-                <img
-                    src="website-development.png"
-                    alt="Website Development"
-                    loading="lazy"
-                >
+                <img src="website-development.png"
+                     alt="Website Development" loading="lazy">
             </div>
-
             <div class="service-icon">🌐</div>
-
             <h3>Website Development</h3>
-
             <p>
                 Create a modern, responsive and professional
                 website for your business or brand.
             </p>
-
-            <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc4xJUYb_TyGVLKIgFxxtJuYFb3Xs6YS7rt8WAdvtJG7e3RQA/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="service-button"
-            >
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4xJUYb_TyGVLKIgFxxtJuYFb3Xs6YS7rt8WAdvtJG7e3RQA/viewform?usp=header"
+               target="_blank" rel="noopener noreferrer"
+               class="service-button">
                 START YOUR PROJECT →
             </a>
-
         </article>
 
-
-        <!-- SOFTWARE DEVELOPMENT -->
         <article class="service-card">
-
             <div class="service-image">
-                <img
-                    src="software-development.png"
-                    alt="Software Development"
-                    loading="lazy"
-                >
+                <img src="software-development.png"
+                     alt="Software Development" loading="lazy">
             </div>
-
             <div class="service-icon">💻</div>
-
             <h3>Software Development</h3>
-
             <p>
                 Get custom software designed around your
                 business requirements and workflow.
             </p>
-
-            <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfvKNNsyXBiUIMg9HU2gVYXoPSlkqOPd10bLKBuuhA1ZF5nMw/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="service-button"
-            >
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvKNNsyXBiUIMg9HU2gVYXoPSlkqOPd10bLKBuuhA1ZF5nMw/viewform?usp=header"
+               target="_blank" rel="noopener noreferrer"
+               class="service-button">
                 START YOUR PROJECT →
             </a>
-
         </article>
 
     </div>
 </section>
 
-
-<!-- NOTICE: EXACTLY 3 PHOTOS -->
-<section id="notice" class="section">
-
-    
-<!-- GLOMING NOTICE SLIDER -->
+<!-- NOTICE: ONLY 3 PHOTOS, MANUAL SCROLL -->
 <section id="notice" class="section notice-section">
 
     <div class="section-heading">
         <span>GLOMING UPDATES</span>
         <h2>NOTICE</h2>
-        <p>Explore our services, professional work and support.</p>
+        <p>
+            Explore our services, professional work and support.
+        </p>
     </div>
 
     <div class="notice-slider">
         <div class="notice-track">
 
-            <!-- FIRST SET: 3 PHOTOS -->
-            <div class="notice-group">
-                <img src="notice-5.png" alt="Meta Ads and Graphic Design">
-                <img src="notice-6.png" alt="Professional Team and Work">
-                <img src="notice-7.png" alt="GLOMING Call Support">
-            </div>
-            </div>
+            <img src="notice-4.png"
+                 alt="GLOMING Meta Ads and Graphic Design"
+                 draggable="false">
+
+            <img src="notice-5.png"
+                 alt="GLOMING Professional Team and Work"
+                 draggable="false">
+
+            <img src="notice-6.png"
+                 alt="GLOMING Call Support"
+                 draggable="false">
 
         </div>
     </div>
 
 </section>
 
-
-</section>
-
-
 <!-- ABOUT -->
 <section id="about" class="section">
-
     <div class="about-content">
-
         <div class="section-heading">
             <span>ABOUT GLOMING</span>
-
-            <h2>
-                Turning Ideas Into
-                Digital Solutions.
-            </h2>
+            <h2>Turning Ideas Into Digital Solutions.</h2>
         </div>
 
         <p>
@@ -233,79 +255,58 @@
         </p>
 
         <strong>
-            “You Bring the Idea. We Build the Software.”
+            You Bring the Idea. We Build the Software.
         </strong>
 
         <p>
             <strong>Founder:</strong>
             <a href="founder.html">Ganapati Sahu (Shakti)</a>
         </p>
-
     </div>
-
 </section>
-
 
 <!-- WHY GLOMING -->
 <section class="section">
-
     <div class="section-heading">
         <span>WHY GLOMING</span>
         <h2>Built Around Your Needs</h2>
     </div>
 
     <div class="why-grid">
-
         <div class="why-card">
             <div>💡</div>
             <h3>Idea Focused</h3>
-            <p>
-                We understand your idea before starting development.
-            </p>
+            <p>We understand your idea before starting development.</p>
         </div>
 
         <div class="why-card">
             <div>⚙️</div>
             <h3>Custom Solutions</h3>
-            <p>
-                Solutions are designed according to your
-                business requirements.
-            </p>
+            <p>Solutions designed around your business requirements.</p>
         </div>
 
         <div class="why-card">
             <div>🤝</div>
             <h3>Team Support</h3>
-            <p>
-                Our team remains available for project
-                discussion and support.
-            </p>
+            <p>Our team helps with project discussions and support.</p>
         </div>
 
         <div class="why-card">
             <div>🛠️</div>
-            <h3>Long-Term Support</h3>
-            <p>
-                Development, testing, updates and technical
-                support are part of our service approach.
-            </p>
+            <h3>Technical Support</h3>
+            <p>Development, testing, updates and technical assistance.</p>
         </div>
-
     </div>
-
 </section>
-
 
 <!-- PROCESS -->
 <section id="process" class="section">
-
     <div class="section-heading">
         <span>HOW IT WORKS</span>
         <h2>From Idea To Solution</h2>
     </div>
 
     <div class="process-grid">
-
         <div class="process-card">
             <span>01</span>
             <h3>Requirement</h3>
@@ -327,7 +328,7 @@
         <div class="process-card">
             <span>04</span>
             <h3>Development</h3>
-            <p>Our team starts design and development.</p>
+            <p>Design and development begin.</p>
         </div>
 
         <div class="process-card">
@@ -341,120 +342,85 @@
             <h3>Delivery</h3>
             <p>Your completed solution is delivered.</p>
         </div>
-
     </div>
-
 </section>
-
 
 <!-- PAYMENT -->
 <section class="section">
-
     <div class="section-heading">
         <span>PAYMENT</span>
         <h2>Transparent Project Process</h2>
-
         <p>
-            Final pricing depends on your project requirements,
-            features, complexity and development scope.
+            Final pricing depends on project requirements,
+            features, complexity and scope.
         </p>
     </div>
 
     <div class="payment-grid">
-
         <div class="payment-card">
             <h3>Development Demo</h3>
             <strong>₹499</strong>
-
             <p>
-                Development demo/version fee.
-                This amount is separate from the final
-                project cost.
+                Demo/version fee, separate from the final project cost.
             </p>
         </div>
 
         <div class="payment-card">
             <h3>Development Payment</h3>
             <strong>30% + 70%</strong>
-
             <p>
-                30% advance before development and remaining
-                70% according to agreed project terms.
+                Advance and remaining payment according to
+                the agreed project terms.
             </p>
         </div>
 
         <div class="payment-card">
             <h3>Play Store Publishing</h3>
             <strong>₹3,000</strong>
-
             <p>
-                Google Play Store publishing charge is
-                separate from development cost.
+                Publishing charge, separate from development cost.
             </p>
         </div>
-
     </div>
 
     <div class="warranty-box">
         <h3>6-Month Development Bug Warranty</h3>
-
         <p>
-            GLOMING provides a 6-month development bug warranty
-            for the delivered project. New features, redesigns
-            and additional changes may be charged separately.
+            Development bug warranty applies to the delivered
+            project according to the agreed terms. New features,
+            redesigns and additional changes may cost extra.
         </p>
     </div>
-
 </section>
-
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-
     <div class="contact-box">
-
         <div class="section-heading">
             <span>GET IN TOUCH</span>
             <h2>Let's Build Something Great.</h2>
-
-            <p>
-                Have an idea? Tell the GLOMING team about it.
-            </p>
+            <p>Have an idea? Tell the GLOMING team about it.</p>
         </div>
 
         <div class="contact-buttons">
-
-            <a
-                href="mailto:glomingofficial@gmail.com"
-                class="btn btn-primary"
-            >
-                📧 EMAIL US
+            <a href="mailto:glomingofficial@gmail.com"
+               class="btn btn-primary">
+                EMAIL US
             </a>
 
-            <a
-                href="https://www.instagram.com/gloming.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-outline"
-            >
-                📱 INSTAGRAM
+            <a href="https://www.instagram.com/gloming.in/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-outline">
+                INSTAGRAM
             </a>
-
         </div>
-
     </div>
-
 </section>
-
 
 <!-- FOOTER -->
 <footer class="footer">
-
     <div class="footer-logo">GLOMING</div>
-
-    <p>
-        You Bring the Idea. We Build the Software.
-    </p>
+    <p>You Bring the Idea. We Build the Software.</p>
 
     <div class="footer-links">
         <a href="#home">Home</a>
@@ -466,56 +432,44 @@
     <p class="copyright">
         © 2026 GLOMING. All Rights Reserved.
     </p>
-
 </footer>
-
 
 <!-- CHATBASE -->
 <script>
 (function () {
-
-    if (
-        !window.chatbase ||
-        window.chatbase("getState") !== "initialized"
-    ) {
+    if (!window.chatbase ||
+        window.chatbase("getState") !== "initialized") {
 
         window.chatbase = (...args) => {
             if (!window.chatbase.q) {
                 window.chatbase.q = [];
             }
-
             window.chatbase.q.push(args);
         };
 
         window.chatbase = new Proxy(window.chatbase, {
             get(target, prop) {
-
                 if (prop === "q") {
                     return target.q;
                 }
-
                 return (...args) => target(prop, ...args);
             }
         });
     }
 
-    const onLoad = function () {
-
+    function onLoad() {
         const script = document.createElement("script");
-
         script.src = "https://www.chatbase.co/embed.min.js";
         script.id = "g6slCvy-ffQx4RWCzINAU";
         script.domain = "www.chatbase.co";
-
         document.body.appendChild(script);
-    };
+    }
 
     if (document.readyState === "complete") {
         onLoad();
     } else {
         window.addEventListener("load", onLoad);
     }
-
 })();
 </script>
 
