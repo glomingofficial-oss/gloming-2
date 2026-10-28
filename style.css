@@ -1,7 +1,7 @@
+
 /* =========================================================
-   GLOMING WEBSITE
-   PREMIUM BLUE + WHITE
-   FINAL CSS
+   GLOMING WEBSITE - PREMIUM BLUE + WHITE
+   UPDATED CSS - IMAGE DISPLAY FIX
 ========================================================= */
 
 * {
@@ -32,26 +32,19 @@ img {
     max-width: 100%;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
+/* HEADER */
 
 .header {
     position: sticky;
     top: 0;
     z-index: 1000;
-
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 18px 6%;
-
     background: rgba(255, 255, 255, 0.97);
     border-bottom: 1px solid #e5e7eb;
-
     backdrop-filter: blur(12px);
 }
 
@@ -73,7 +66,7 @@ img {
     font-size: 15px;
     font-weight: 600;
     color: #344054;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -84,21 +77,15 @@ img {
     display: none;
 }
 
-/* =========================================================
-   HERO
-========================================================= */
+/* HERO */
 
 .hero {
     min-height: 720px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
     padding: 100px 6%;
-
     background:
         radial-gradient(
             circle at 50% 20%,
@@ -118,15 +105,11 @@ img {
 
 .hero-badge {
     display: inline-block;
-
     padding: 8px 15px;
     margin-bottom: 25px;
-
     border-radius: 50px;
-
     background: #eaf2ff;
     color: #1264ff;
-
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
@@ -135,10 +118,8 @@ img {
 .hero h1 {
     font-size: clamp(42px, 6vw, 78px);
     line-height: 1.05;
-
     font-weight: 900;
     letter-spacing: -2px;
-
     margin-bottom: 25px;
 }
 
@@ -149,9 +130,7 @@ img {
 
 .hero p {
     max-width: 700px;
-
     margin: 0 auto 35px;
-
     color: #667085;
     font-size: 18px;
 }
@@ -160,52 +139,39 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 14px;
     flex-wrap: wrap;
 }
 
-/* =========================================================
-   BUTTONS
-========================================================= */
+/* BUTTONS */
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     min-height: 50px;
-
     padding: 0 24px;
-
     border-radius: 10px;
-
     font-size: 14px;
     font-weight: 800;
-
     transition: 0.3s ease;
 }
 
 .btn-primary {
     background: #1264ff;
     color: #ffffff;
-
-    box-shadow:
-        0 12px 30px rgba(18, 100, 255, 0.20);
+    box-shadow: 0 12px 30px rgba(18, 100, 255, 0.20);
 }
 
 .btn-primary:hover {
     background: #084dcc;
     transform: translateY(-3px);
-
-    box-shadow:
-        0 16px 35px rgba(18, 100, 255, 0.28);
+    box-shadow: 0 16px 35px rgba(18, 100, 255, 0.28);
 }
 
 .btn-outline {
     background: #ffffff;
     color: #1264ff;
-
     border: 1px solid #b8cdfc;
 }
 
@@ -214,9 +180,7 @@ img {
     transform: translateY(-3px);
 }
 
-/* =========================================================
-   GENERAL SECTION
-========================================================= */
+/* GENERAL SECTIONS */
 
 .section {
     padding: 100px 6%;
@@ -224,41 +188,30 @@ img {
 
 .section-heading {
     max-width: 750px;
-
     margin: 0 auto 55px;
-
     text-align: center;
 }
 
 .section-heading.left {
     margin-left: 0;
     margin-right: 0;
-
     text-align: left;
 }
 
 .section-heading span {
     display: block;
-
     margin-bottom: 10px;
-
     color: #1264ff;
-
     font-size: 12px;
     font-weight: 900;
-
     letter-spacing: 2px;
 }
 
 .section-heading h2 {
     font-size: clamp(32px, 4vw, 50px);
-
     line-height: 1.15;
-
     margin-bottom: 15px;
-
     font-weight: 900;
-
     letter-spacing: -1px;
 }
 
@@ -267,168 +220,112 @@ img {
     font-size: 16px;
 }
 
-/* =========================================================
-   SERVICES
-========================================================= */
+/* SERVICES GRID */
 
 .service-grid {
     max-width: 1200px;
-
     margin: auto;
-
     display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
 }
 
 .service-card {
     overflow: hidden;
-
     background: #ffffff;
-
     border: 1px solid #e4e7ec;
-
     border-radius: 20px;
-
-    box-shadow:
-        0 10px 35px rgba(16, 24, 40, 0.06);
-
-    transition: 0.35s ease;
+    box-shadow: 0 10px 35px rgba(16, 24, 40, 0.06);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
-
+    transform: translateY(-5px);
     border-color: #b8cdfc;
-
-    box-shadow:
-        0 20px 45px rgba(18, 100, 255, 0.12);
+    box-shadow: 0 20px 45px rgba(18, 100, 255, 0.12);
 }
 
-/* =========================================================
-   SERVICE IMAGES
-   NO LEFT / RIGHT BLANK SPACE
-========================================================= */
+/* SERVICE IMAGES - FULL GRAPHIC, LESS CROPPING */
 
 .service-image {
     width: 100%;
-    height: 210px;
-
+    aspect-ratio: 16 / 9;
     overflow: hidden;
-
-    background: #eef4ff;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #ffffff;
 }
 
 .service-image img {
+    display: block;
     width: 100%;
     height: 100%;
-
-    display: block;
-
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-
-    transition: 0.5s ease;
+    image-rendering: auto;
+    transition: transform 0.35s ease;
 }
 
 .service-card:hover .service-image img {
-    transform: scale(1.03);
+    transform: scale(1.015);
 }
 
-/* =========================================================
-   SERVICE CONTENT
-========================================================= */
+/* SERVICE CONTENT */
 
 .service-icon {
     width: 55px;
     height: 55px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin: 22px 24px 12px;
-
     border-radius: 14px;
-
     background: #eaf2ff;
-
     font-size: 25px;
 }
 
 .service-card h3 {
     padding: 0 24px;
-
     font-size: 24px;
-
     margin-bottom: 10px;
 }
 
 .service-card p {
     padding: 0 24px;
-
     color: #667085;
-
     font-size: 15px;
-
     margin-bottom: 22px;
 }
 
 .service-button {
     display: block;
-
     margin: 0 24px 25px;
-
     padding: 13px 16px;
-
     text-align: center;
-
     border-radius: 9px;
-
     background: #1264ff;
-
     color: #ffffff;
-
     font-size: 13px;
     font-weight: 800;
-
-    transition: 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .service-button:hover {
     background: #084dcc;
 }
 
-/* =========================================================
-   NOTICE
-========================================================= */
+/* NOTICE SLIDER */
 
 .notice-slider {
     width: 100%;
-
     overflow: hidden;
-
     padding: 10px 0;
 }
 
 .notice-track {
     width: max-content;
-
     display: flex;
     align-items: center;
-
     gap: 20px;
-
-    animation:
-        noticeScroll 30s linear infinite;
-
+    animation: noticeScroll 30s linear infinite;
     will-change: transform;
 }
 
@@ -438,31 +335,19 @@ img {
 
 .notice-track img {
     width: 420px;
-
     height: auto;
-
     aspect-ratio: 16 / 9;
-
     object-fit: contain;
-
     object-position: center;
-
     flex-shrink: 0;
-
     display: block;
-
     background: #ffffff;
-
     border-radius: 15px;
-
     border: 1px solid #e4e7ec;
-
-    box-shadow:
-        0 8px 25px rgba(16, 24, 40, 0.08);
+    box-shadow: 0 8px 25px rgba(16, 24, 40, 0.08);
 }
 
 @keyframes noticeScroll {
-
     0% {
         transform: translateX(0);
     }
@@ -472,317 +357,223 @@ img {
     }
 }
 
-/* =========================================================
-   ABOUT
-========================================================= */
+/* ABOUT */
 
 .about-content {
     max-width: 850px;
-
     margin: auto;
-
     text-align: center;
 }
 
-.about-content .section-heading {.about-heading {
+.about-content .section-heading {
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .about-heading h2 {
-    white-space: nowrap;
-}
-    margin-bottom: 25px;
+    white-space: normal;
 }
 
 .about-content p {
     color: #667085;
-
     font-size: 17px;
-
     margin-bottom: 18px;
 }
 
 .about-content strong {
     display: block;
-
     margin-top: 25px;
-
     color: #1264ff;
-
     font-size: 18px;
 }
 
-/* =========================================================
-   WHY GLOMING
-========================================================= */
+/* WHY GLOMING */
 
 .why-grid {
     max-width: 1100px;
-
     margin: auto;
-
     display: grid;
-
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
 }
 
 .why-card {
     padding: 28px;
-
     background: #ffffff;
-
     border: 1px solid #e4e7ec;
-
     border-radius: 16px;
-
     text-align: center;
-
     transition: 0.3s ease;
 }
 
 .why-card:hover {
     transform: translateY(-5px);
-
     border-color: #b8cdfc;
 }
 
 .why-card > div {
     font-size: 32px;
-
     margin-bottom: 12px;
 }
 
 .why-card h3 {
     margin-bottom: 8px;
-
     font-size: 19px;
 }
 
 .why-card p {
     color: #667085;
-
     font-size: 14px;
 }
 
-/* =========================================================
-   PROCESS
-========================================================= */
+/* PROCESS */
 
 .process-grid {
     max-width: 1100px;
-
     margin: auto;
-
     display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
 
 .process-card {
     position: relative;
-
     padding: 30px;
-
     border: 1px solid #e4e7ec;
-
     border-radius: 16px;
-
     background: #ffffff;
-
     transition: 0.3s ease;
 }
 
 .process-card:hover {
     transform: translateY(-5px);
-
-    box-shadow:
-        0 15px 35px rgba(16, 24, 40, 0.07);
+    box-shadow: 0 15px 35px rgba(16, 24, 40, 0.07);
 }
 
 .process-card > span {
     display: inline-flex;
-
     width: 45px;
     height: 45px;
-
     align-items: center;
     justify-content: center;
-
     margin-bottom: 20px;
-
     border-radius: 50%;
-
     background: #1264ff;
-
     color: #ffffff;
-
     font-weight: 900;
 }
 
 .process-card h3 {
     margin-bottom: 8px;
-
     font-size: 20px;
 }
 
 .process-card p {
     color: #667085;
-
     font-size: 14px;
 }
 
-/* =========================================================
-   PAYMENT
-========================================================= */
+/* PAYMENT */
 
 .payment-grid {
     max-width: 1100px;
-
     margin: auto;
-
     display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
 
 .payment-card {
     padding: 30px;
-
     background: #ffffff;
-
     border: 1px solid #e4e7ec;
-
     border-radius: 18px;
-
     text-align: center;
 }
 
 .payment-card h3 {
     margin-bottom: 12px;
-
     font-size: 20px;
 }
 
 .payment-card strong {
     display: block;
-
     margin-bottom: 12px;
-
     color: #1264ff;
-
     font-size: 30px;
 }
 
 .payment-card p {
     color: #667085;
-
     font-size: 14px;
 }
 
 .warranty-box {
     max-width: 900px;
-
     margin: 35px auto 0;
-
     padding: 30px;
-
     text-align: center;
-
     border-radius: 18px;
-
     background: #eaf2ff;
-
     border: 1px solid #c9dcff;
 }
 
 .warranty-box h3 {
     margin-bottom: 8px;
-
     color: #1264ff;
 }
 
 .warranty-box p {
     color: #475467;
-
     font-size: 14px;
 }
 
-/* =========================================================
-   CONTACT
-========================================================= */
+/* CONTACT */
 
 .contact-box {
     max-width: 850px;
-
     margin: auto;
-
     text-align: center;
 }
 
 .contact-buttons {
     display: flex;
-
     justify-content: center;
-
     gap: 14px;
-
     flex-wrap: wrap;
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+/* FOOTER */
 
 .footer {
     padding: 50px 6% 30px;
-
     background: #07152f;
-
     color: #ffffff;
-
     text-align: center;
 }
 
 .footer-logo {
     margin-bottom: 10px;
-
     font-size: 28px;
-
     font-weight: 900;
-
     letter-spacing: 2px;
 }
 
 .footer > p {
     color: #b7c4da;
-
     font-size: 14px;
 }
 
 .footer-links {
     display: flex;
-
     justify-content: center;
-
     gap: 25px;
-
     margin: 25px 0;
 }
 
 .footer-links a {
     color: #dbe8ff;
-
     font-size: 14px;
-
     transition: 0.3s ease;
 }
 
@@ -792,32 +583,27 @@ img {
 
 .copyright {
     padding-top: 20px;
-
-    border-top:
-        1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* TABLET */
 
 @media (max-width: 900px) {
-
     .nav-links {
         display: none;
     }
 
     .service-grid,
     .payment-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .why-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .process-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .notice-track img {
@@ -825,12 +611,9 @@ img {
     }
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+/* MOBILE */
 
 @media (max-width: 600px) {
-
     .header {
         padding: 15px 5%;
     }
@@ -841,13 +624,11 @@ img {
 
     .hero {
         min-height: 650px;
-
         padding: 80px 5%;
     }
 
     .hero h1 {
         font-size: 42px;
-
         letter-spacing: -1.5px;
     }
 
@@ -874,47 +655,33 @@ img {
         grid-template-columns: 1fr;
     }
 
-    /* SERVICE IMAGE */
-
     .service-image {
         width: 100%;
-
-        height: 210px;
-
+        aspect-ratio: 16 / 9;
+        height: auto;
         overflow: hidden;
     }
 
     .service-image img {
         width: 100%;
         height: 100%;
-
-        object-fit: cover;
+        object-fit: contain;
         object-position: center;
     }
 
-    /* NOTICE */
-
     .notice-track {
         gap: 15px;
-
         animation-duration: 24s;
     }
 
     .notice-track img {
         width: 280px;
-
         height: 180px;
-
         aspect-ratio: auto;
-
         object-fit: contain;
-
         object-position: center;
-
         border-radius: 14px;
     }
-
-    /* BUTTONS */
 
     .contact-buttons {
         flex-direction: column;
@@ -924,28 +691,21 @@ img {
         width: 100%;
     }
 
-    /* FOOTER */
-
     .footer-links {
         flex-wrap: wrap;
-
         gap: 15px;
     }
 }
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
+/* SMALL MOBILE */
 
 @media (max-width: 380px) {
-
     .hero h1 {
         font-size: 36px;
     }
 
     .notice-track img {
         width: 250px;
-
         height: 160px;
     }
 }
